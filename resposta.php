@@ -21,3 +21,38 @@
     echo "<p>Multiplicação = $mult</p>";
     echo "<p>Divisão = $div</p>";
 
+    if ($soma > 0){
+        echo "Soma maior que zero!";
+    } elseif ($soma <0 ){
+        echo "Soma menor que zero!";
+    } else {
+        echo "Soma igual a zero!";
+    }
+
+    switch ($soma){
+        case 0:
+            echo "Igual a zero!";
+            break;
+        case 1:
+            echo "Igual a um!";
+            break;
+        case 2:
+            echo "Igual a dois!";
+            break;
+        default:
+            echo "Outra opção!";
+            break;
+    }
+
+    if ($sub == 0)
+        echo "Igual a zero!";
+    else
+        echo "Diferente de zero!";
+
+    echo $mensagem = $sub == 0 ? "Igual a zero!" : "Diferente de zero!"; // é a mesma lógica acima 
+    // com if e else
+
+    if (($soma == 0) && ($sub == 0) || (!$mult)){
+        echo "Exibindo mensagem!";
+    }
+
