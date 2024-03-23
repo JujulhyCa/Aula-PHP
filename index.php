@@ -17,7 +17,7 @@
             <!--<button type="submit">Enviar</button> -->
             
             <label>Informe o valor 2:</label>
-            <input type="text" name="valor">
+            <input type="text" name="valor2">
             <button type="submit">Enviar</button>
 </body>
 </html>

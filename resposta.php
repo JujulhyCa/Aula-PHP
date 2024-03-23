@@ -49,10 +49,21 @@
     else
         echo "Diferente de zero!";
 
-    echo $mensagem = $sub == 0 ? "Igual a zero!" : "Diferente de zero!"; // é a mesma lógica acima 
-    // com if e else
+    echo $mensagem = $sub == 0 ? "Igual a zero!" : "Diferente de zero!"; //operador ternário: é a mesma lógica acima 
+    // com if e else simples
 
     if (($soma == 0) && ($sub == 0) || (!$mult)){
         echo "Exibindo mensagem!";
     }
+
+    $i = 0;
+    while($i<10){
+        echo $i;
+        $i++;
+    }
+
+    for($i=0;$i<10;$i++){
+        echo $i;
+    }
+
 
