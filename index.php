@@ -7,9 +7,17 @@
 </head>
 <body>
     Hoje é dia <?php echo date("d/m/y"); ?>
-    <form action="" method="">
+    <form action="resposta.php" method="post">
             <label>Informe o nome:</label>
             <input type="text" name="nome">
+            <button type="submit">Enviar</button>
+
+            <label>Informe o valor 1:</label>
+            <input type="text" name="valor1">
+            <button type="submit">Enviar</button>
+
+            <label>Informe o valor 2:</label>
+            <input type="text" name="valor">
             <button type="submit">Enviar</button>
 </body>
 </html>
