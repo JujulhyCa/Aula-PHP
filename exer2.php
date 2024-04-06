@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
 </head>
-<!-- 2. Escreva um programa que leia 7 números diferentes, imprima o menor valor e imprima a posição do
-menor valor na sequência de entrada. -->
 <body>
-<form action="exer2resposta.php" method="post">
-    <label>Informe 7 números diferentes:</label>
-    <input type="number" name="valor1">
-    <input type="number" name="valor2">
-    <input type="number" name="valor3">
-    <input type="number" name="valor4">
-    <input type="number" name="valor5">
-    <input type="number" name="valor6">
-    <input type="number" name="valor7">
-    <button type="submit" >Enviar</button>
-    <form>
+    <form action="" method="post"> <!--action vazio chama a mesma página-->
+    <?php
+        for ($i=0; $i<7; $i++){
+            echo '<input type="number" name="valores[]" >';
+        }
+    ?>
+    <button type="submit">Ok</button>
+    </form>
+
+    <?php
+        if (isset($_POST)){ // isset verificar se existe a variável, se ela tem valor  - se manda uma variável POST cria um array POST-->
+            if (isset($_POST['valores'])){
+                $vetor = $_POST['valores'];
+                var_dump($vetor);
+            }
+        }
+    ?>
 </body>
 </html>
+
